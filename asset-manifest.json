@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Yumiko-Liu/react-netease-music/static/css/main.06682fe3.chunk.css",
-    "main.js": "/Yumiko-Liu/react-netease-music/static/js/main.8e3a43ee.chunk.js",
-    "main.js.map": "/Yumiko-Liu/react-netease-music/static/js/main.8e3a43ee.chunk.js.map",
-    "runtime~main.js": "/Yumiko-Liu/react-netease-music/static/js/runtime~main.715a54ec.js",
-    "runtime~main.js.map": "/Yumiko-Liu/react-netease-music/static/js/runtime~main.715a54ec.js.map",
-    "static/js/2.b54b4d0f.chunk.js": "/Yumiko-Liu/react-netease-music/static/js/2.b54b4d0f.chunk.js",
-    "static/js/2.b54b4d0f.chunk.js.map": "/Yumiko-Liu/react-netease-music/static/js/2.b54b4d0f.chunk.js.map",
-    "index.html": "/Yumiko-Liu/react-netease-music/index.html",
-    "precache-manifest.52f6d5900312c217cf7675a63082a627.js": "/Yumiko-Liu/react-netease-music/precache-manifest.52f6d5900312c217cf7675a63082a627.js",
-    "service-worker.js": "/Yumiko-Liu/react-netease-music/service-worker.js",
-    "static/css/main.06682fe3.chunk.css.map": "/Yumiko-Liu/react-netease-music/static/css/main.06682fe3.chunk.css.map"
+    "main.css": "./static/css/main.06682fe3.chunk.css",
+    "main.js": "./static/js/main.0866e183.chunk.js",
+    "main.js.map": "./static/js/main.0866e183.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/js/2.b54b4d0f.chunk.js": "./static/js/2.b54b4d0f.chunk.js",
+    "static/js/2.b54b4d0f.chunk.js.map": "./static/js/2.b54b4d0f.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.bae7d63aee26736066cdc38eabe07d5f.js": "./precache-manifest.bae7d63aee26736066cdc38eabe07d5f.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.06682fe3.chunk.css.map": "./static/css/main.06682fe3.chunk.css.map"
   }
 }
