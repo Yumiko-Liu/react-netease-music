@@ -1,4 +1,4 @@
-const { 
+const {
   override,
   fixBabelImports,
   addLessLoader,

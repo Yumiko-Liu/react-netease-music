@@ -1,27 +1,22 @@
 import React from 'react';
-import './assets/css/App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './views/Home/Home';
+import Personal from './views/Personal/Personal';
+import NavBar from './components/NavBar/NavBar';
+import './assets/css/App.less';
 
-import { Button } from 'antd-mobile';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button type="primary">primary</Button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/personal" component={Personal} />
+        </Switch>
+        <NavBar />
+      </Router>
+    );
+  }
 }
 
 export default App;
