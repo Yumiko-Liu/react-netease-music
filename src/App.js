@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from './views/Home/Home';
-import Personal from './views/Personal/Personal';
-import NavBar from './components/NavBar/NavBar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Main from './layout/Main';
+import Music from './views/Music/Music';
+
 import './assets/css/App.less';
 
 class App extends React.Component {
@@ -10,10 +11,9 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/personal" component={Personal} />
+          <Route path="/" exact component={Main} />
+          <Route path="/music" component={Music} />
         </Switch>
-        <NavBar />
       </Router>
     );
   }

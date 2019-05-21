@@ -14,7 +14,7 @@ class NavBar extends React.Component {
       icon: 'iconfont iconshipinbofang-',
       name: '视频'
     }, {
-      path: '/music',
+      path: '/mymusic',
       icon: 'iconfont iconyinyue1',
       name: '我的'
     }, {
@@ -32,8 +32,8 @@ class NavBar extends React.Component {
       <div className={"navbar-wrapper"}>
         <ul className={"navbar"}>
           {this.navbarList.map((item) =>
-            <NavLink to={item.path} className={"navbar-item"} exact>
-              <li key={item.name}>
+            <NavLink to={item.path} className={"navbar-item"} key={item.name} exact>
+              <li>
                 <div className={"navbar-item-icon"}>
                   <i className={item.icon}></i>
                 </div>
