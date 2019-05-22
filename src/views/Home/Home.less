@@ -1,0 +1,28 @@
+@import "../../assets/css/App.less";
+
+.home-wrapper {
+  height: 100%;
+  background-color: #fff;
+  .carousel-wrapper {
+    padding: 15px;
+    .am-carousel {
+      border-radius: 5px;
+      overflow: hidden;
+      .am-carousel-wrap {
+        padding-bottom: 2px;
+        .am-carousel-wrap-dot {
+          & > span {
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, .6);
+          }
+        }
+        .am-carousel-wrap-dot-active {
+          & > span {
+            background: @theme-color;
+          }
+        }
+      }
+    }
+  }
+}
