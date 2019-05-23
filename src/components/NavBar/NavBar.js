@@ -6,23 +6,23 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.navbarList = [{
-      path: '/',
+      path: '/main/',
       icon: 'iconfont iconwangyiyunyinle',
       name: '发现'
     }, {
-      path: '/video',
+      path: '/main/video',
       icon: 'iconfont iconshipinbofang-',
       name: '视频'
     }, {
-      path: '/mymusic',
+      path: '/main/mymusic',
       icon: 'iconfont iconyinyue1',
       name: '我的'
     }, {
-      path: '/friends',
+      path: '/main/friends',
       icon: 'iconfont iconpengyou',
       name: '朋友'
     }, {
-      path: '/personal',
+      path: '/main/personal',
       icon: 'iconfont iconuser',
       name: '账号'
     }];

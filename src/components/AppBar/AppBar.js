@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './AppBar.less';
 
 class AppBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
   render() {
     return (
       <div className={"appbar-wrapper"}>
@@ -16,7 +18,9 @@ class AppBar extends React.Component {
           <input type="text" placeholder="猜你喜欢" />
         </div>
         <div className={"icon-btn"}>
-          <i className={"iconfont iconyinlebofangxuanlvjiezou"}></i>
+          <Link to={"/song"}>
+            <i className={"iconfont iconyinlebofangxuanlvjiezou"}></i>
+          </Link>
         </div>
       </div>
     );
