@@ -1,6 +1,8 @@
 import React from 'react';
 import { Carousel } from 'antd-mobile';
 
+import SongList from '../../components/SongList/SongList';
+
 import './Home.less';
 
 class Home extends React.Component {
@@ -12,28 +14,80 @@ class Home extends React.Component {
         'http://p1.music.126.net/4EKGak0vW16gxBDsZjbquQ==/109951164090874954.jpg',
         'http://p1.music.126.net/NwfzOrsXCxfMC5gW3FAfkw==/109951164091546133.jpg'
       ]
-    }
+    };
+    this.entranceList = [{
+      path: '',
+      icon: 'iconfont iconrili',
+      name: '每日推荐'
+    }, {
+      path: '',
+      icon: 'iconfont icongedan',
+      name: '歌单'
+    }, {
+      path: '',
+      icon: 'iconfont iconzhuzhuangtutubiao',
+      name: '排行榜'
+    }, {
+      path: '',
+      icon: 'iconfont icondiantai',
+      name: '电台'
+    }, {
+      path: '',
+      icon: 'iconfont iconzhibo',
+      name: '直播'
+    }]
   }
   render() {
     return (
       <div className={"home-wrapper"}>
         <div className={"carousel-wrapper"}>
-          <Carousel autoplay={false} infinite>
+          <Carousel autoplay={true} infinite>
             {this.state.carouselData.map(val => (
-              <a key={val} href="http://www.alipay.com" style={{ display: 'inline-block', width: '100%', height: '150px' }}>
-                <img src={val} alt="" style={{ width: '100%', height: '150px' }}/>
+              <a key={val} href="http://www.alipay.com" className={"carousel-slider-slide-a"}>
+                <img src={val} alt="" />
               </a>
             ))}
           </Carousel>
         </div>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <div className={"entrance-list-wrapper"}>
+          <ul className={"entrance-list"}>
+            {this.entranceList.map(item => (
+              <li>
+                <a href="#22">
+                  <div className={"entrance-list-icon"}>
+                    <i className={item.icon}></i>
+                  </div>
+                  <p>{item.name}</p>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className={"remd-songlist-wrapper"}>
+          <h1>推荐歌单</h1>
+          <ul>
+            <li>
+              <SongList />
+            </li>
+            <li>
+              <SongList />
+            </li>
+            <li>
+              <SongList />
+            </li>
+            <li>
+              <SongList />
+            </li>
+            <li>
+              <SongList />
+            </li>
+            <li>
+              <SongList />
+            </li>
+          </ul>
+        </div>
       </div>
     );
   }
