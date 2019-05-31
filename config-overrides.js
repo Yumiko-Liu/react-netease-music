@@ -11,5 +11,8 @@ module.exports = override(
     style: 'css',
   }),
   addLessLoader(),
-  addPostcssPlugins([require('autoprefixer')({ browsers: ['last 10 Chrome versions', 'last 5 Firefox versions', 'Safari >= 6', 'ie > 8'] })])
+  addPostcssPlugins([
+    require('autoprefixer')({ browsers: ['last 10 Chrome versions', 'last 5 Firefox versions', 'Safari >= 6', 'ie > 8'] }),
+    require("postcss-pxtorem")({ "rootValue": 100, "propList": ["*"] })
+  ])
 );
